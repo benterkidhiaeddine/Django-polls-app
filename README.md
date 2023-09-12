@@ -1,6 +1,8 @@
 # random-profile-generator
 
-This is an app that will generate random social media profiles with profile pics , names ,last names , hobbies ,etc.
+This is a simple polls app Built as a tutorial on how to use Django
+
+for more details check the official Django documentation on : https://docs.djangoproject.com/en/4.2/intro/tutorial01/
 
 # Installation
 
