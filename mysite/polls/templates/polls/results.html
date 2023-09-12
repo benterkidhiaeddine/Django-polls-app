@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results of Question {{ question.id }}</title>
+  </head>
+  <body>
+    <ul>
+      {% for choice in question.choice_set.all %}
+      <li>
+        {{ choice.choice_text }} -- {{ choice.votes }}
+        vote{{choice.votes|pluralize }}
+        <!---->
+        {% endfor %}
+      </li>
+    </ul>
+  </body>
+</html>

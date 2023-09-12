@@ -7,7 +7,6 @@ from django.utils import timezone
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField("publication date")
-    question_author = models.CharField(max_length=50)
 
     # define a method to see if the question was published recently
     def was_published_recently(self):
